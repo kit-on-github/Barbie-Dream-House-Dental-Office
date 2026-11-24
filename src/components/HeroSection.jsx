@@ -1,5 +1,5 @@
 import './HeroSection.css'
-import storefrontImage from '../assets/aurelia-storefront.png'
+import storefrontImage from '../assets/Aurelia-Storefront.png'
 
 function HeroSection() {
   return (
