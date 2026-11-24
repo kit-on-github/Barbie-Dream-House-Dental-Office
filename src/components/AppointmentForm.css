@@ -1,0 +1,334 @@
+
+/* =================================
+   AURELIA DENTAL
+   APPOINTMENT FORM
+================================= */
+
+/* =================================
+   FORM CONTAINER
+================================= */
+
+.appointment-form-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: var(--space-2xl);
+
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* =================================
+   FORM LAYOUT
+================================= */
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* FORM SECTIONS */
+
+.appointment-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+
+  min-width: 0;
+  padding: var(--space-lg);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* SECTION HEADINGS */
+
+.appointment-form legend {
+  padding: 0 var(--space-sm);
+
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* =================================
+   FORM FIELDS
+================================= */
+
+/* INDIVIDUAL FIELD CONTAINER */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  width: 100%;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* FIELD LABELS */
+
+.form-field label {
+  color: var(--color-navy);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* INPUTS AND SELECT MENUS */
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.75rem;
+
+  color: var(--color-text-primary);
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+/* INPUT FOCUS STATES */
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: var(--color-blue);
+  outline: 3px solid rgba(28, 112, 173, 0.15);
+  outline-offset: 1px;
+}
+
+/* =================================
+   FORM ACTIONS
+================================= */
+
+.appointment-form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* PREVIEW REQUEST BUTTON */
+
+.preview-request-button {
+  padding: 0.85rem 1.5rem;
+
+  color: var(--color-white);
+  background-color: var(--color-blue);
+
+  border: none;
+  border-radius: var(--radius-sm);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* BUTTON HOVER */
+
+.preview-request-button:hover {
+  background-color: var(--color-navy);
+}
+
+/* BUTTON KEYBOARD FOCUS */
+
+.preview-request-button:focus-visible {
+  outline: 3px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+/* BUTTON ACTIVE */
+
+.preview-request-button:active {
+  transform: translateY(1px);
+}
+
+/* =================================
+   APPOINTMENT PREVIEW
+================================= */
+
+.appointment-preview {
+  width: 100%;
+  margin-top: var(--space-xl);
+  padding: var(--space-xl);
+
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* PREVIEW MAIN HEADING */
+
+.appointment-preview h2 {
+  margin-top: 0;
+  text-align: center;
+
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+}
+
+/* PREVIEW SECTIONS */
+
+.preview-section {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+/* PREVIEW SECTION HEADINGS */
+
+.preview-section h3 {
+  margin-top: 0;
+
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+/* PREVIEW INFORMATION */
+
+.preview-section p {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =================================
+   PREVIEW ACTIONS
+================================= */
+
+.preview-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+/* EDIT REQUEST BUTTON */
+
+.edit-request-button {
+  padding: 0.75rem 1.25rem;
+
+  color: var(--color-navy);
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* EDIT BUTTON HOVER */
+
+.edit-request-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+/* EDIT BUTTON KEYBOARD FOCUS */
+
+.edit-request-button:focus-visible {
+  outline: 3px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media (max-width: 768px) {
+
+  .appointment-form-section {
+    padding: var(--space-lg);
+  }
+
+  .appointment-form fieldset {
+    padding: var(--space-md);
+  }
+
+  .form-field {
+    max-width: 100%;
+  }
+
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 480px) {
+
+  .appointment-form-section {
+    margin: 1rem auto;
+    padding: var(--space-md);
+  }
+
+  .appointment-form {
+    gap: var(--space-lg);
+  }
+
+  .appointment-form fieldset {
+    padding: var(--space-md);
+  }
+
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .appointment-form-actions {
+    width: 100%;
+  }
+
+  .preview-request-button {
+    width: 100%;
+  }
+
+  .appointment-preview {
+    padding: var(--space-md);
+  }
+
+  .preview-section {
+    padding: var(--space-md);
+  }
+
+  .appointment-preview h2 {
+    font-size: 1.5rem;
+  }
+
+  .preview-actions {
+    flex-direction: column;
+  }
+
+  .edit-request-button {
+    width: 100%;
+  }
+
+}

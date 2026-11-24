@@ -8,22 +8,28 @@ function HeroSection() {
       {/* Left column: Practice photograph */}
       <div className="hero-image">
 
-        {<img src={storefrontImage} alt="Exterior of Aurelia Dental"/>}
+        <img src={storefrontImage} alt="Exterior of Aurelia Dental"/>
 
       </div>
 
       {/* Right column: Practice information */}
       <div className="hero-information">
 
-        <div className="hero-brand">
+        <h1 className="hero-brand">
           Aurelia Dental
-        </div>
+        </h1>
 
         <div className="hero-location">
 
           <div className="location-icon">
             {
                 <svg
+                
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"

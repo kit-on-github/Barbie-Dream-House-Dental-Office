@@ -1,0 +1,49 @@
+
+/* =================================
+   APPOINTMENT PAGE
+================================= */
+
+.appointment-page {
+  width: 100%;
+  padding: var(--space-2xl);
+}
+
+/* APPOINTMENT INFORMATION */
+
+.appointment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+
+  width: 100%;
+  max-width: 900px;
+  min-height: 245px;
+  margin: 2rem auto;
+  padding: var(--space-2xl);
+
+  background-color: var(--color-blue);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+/* INFORMATION HEADING */
+
+.appointment-info h1 {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* INFORMATION DESCRIPTION */
+
+.appointment-info p {
+  max-width: 700px;
+  margin: 0;
+  color: var(--color-white);
+  font-size: 1rem;
+  line-height: 1.7;
+}

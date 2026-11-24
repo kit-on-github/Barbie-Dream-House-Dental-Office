@@ -1,0 +1,174 @@
+/* SHOP PAGE */
+.shop-page {
+  width: 100%;
+  padding: 4rem 1.5rem 5rem;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* SHOP INTRODUCTION */
+.shop-intro {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+/* EYEBROW LABEL */
+.shop-eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--color-blue);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* MAIN HEADING */
+.shop-intro h1 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+/* INTRODUCTION DESCRIPTION */
+.shop-description {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* SHOP CATEGORIES */
+.shop-categories {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+.shop-categories h2 {
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+/* CATEGORY GRID */
+.shop-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* CATEGORY CARD */
+.shop-category-card {
+  overflow: hidden;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 3px 10px rgba(25, 72, 106, 0.08);
+}
+
+/* CATEGORY CARD HOVER EFFECT */
+@media (hover: hover) {
+  .shop-category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(25, 72, 106, 0.15);
+  }
+}
+
+/* CATEGORY IMAGE AREA */
+.shop-category-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #d5e5ee;
+}
+
+/* CATEGORY TEXT AREA */
+.shop-category-content {
+  padding: 1.25rem;
+}
+
+.shop-category-content h3 {
+  margin-bottom: 0.6rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+.shop-category-content p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* CATEGORY IMAGE */
+.shop-category-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* CATEGORY TITLE OVERLAY */
+.shop-category-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 75%;
+  padding: 1.25rem;
+
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  text-align: center;
+  border-radius: var(--radius-md);
+}
+
+.shop-category-overlay h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-white);
+}
+
+/* RESPONSIVE SHOP LAYOUT */
+@media (max-width: 768px) {
+
+  .shop-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-category-overlay {
+  width: 85%;
+  padding: 1rem;
+}
+
+.shop-category-overlay h3 {
+  font-size: 1.2rem;
+}
+
+}
+
+.shop-page {
+  padding: 2.5rem 1rem 3rem;
+}
+
+.shop-intro h1 {
+  font-size: 2rem;
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+
+  .shop-category-card {
+    transition: none;
+  }
+
+  .shop-category-card:hover {
+    transform: none;
+  }
+
+}

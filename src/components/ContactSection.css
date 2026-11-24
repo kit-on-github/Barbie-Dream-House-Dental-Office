@@ -1,0 +1,132 @@
+
+/* CONTACT SECTION */
+.contact-section {
+  width: 100%;
+  padding-bottom: var(--space-2xl);
+}
+
+/* SECTION DIVIDER */
+.contact-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background-color: var(--color-navy);
+  border-top: 1px solid var(--color-blue);
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.contact-section-heading h2 {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* CONTACT SECTION LAYOUT */
+.contact-section-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl);
+}
+
+/* CONTACT INFORMATION */
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* MAP CONTAINER */
+.contact-map {
+  width: 100%;
+  aspect-ratio: 1;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+  background-color: var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* CONTACT INFORMATION HEADING */
+.contact-information h3 {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* INDIVIDUAL CONTACT ITEMS */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* CONTACT ITEM HEADINGS */
+.contact-item h4 {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* CONTACT ITEM DETAILS */
+.contact-item p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* DIRECTIONS LINK */
+.contact-directions {
+  grid-column: 1;
+  grid-row: 2;
+  color: var(--color-blue);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-directions:hover {
+  color: var(--color-navy);
+  text-decoration: underline;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+
+    .contact-section-layout {
+        grid-template-columns: 1fr;
+    }
+
+.contact-information,
+.contact-directions,
+.contact-map {
+    grid-column: 1;
+    grid-row: auto;
+}
+
+}
